@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERP Dashboard - AIMT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        /* HEADER */
+        header {
+            background: #800000;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .logout {
+            background: white;
+            color: #800000;
+            padding: 8px 12px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        /* SIDEBAR */
+        .sidebar {
+            width: 200px;
+            height: 100vh;
+            background: #3d0000;
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding-top: 60px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            padding: 15px;
+        }
+
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        .sidebar ul li a:hover {
+            background: #800000;
+        }
+
+        /* MAIN CONTENT */
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+
+        .student-info {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .dashboard {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .box {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            text-align: center;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100px;
+            }
+            .content {
+                margin-left: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <img src="icons/logo.png" alt="AIMT Logo">
+            <h1>AIMT ERP</h1>
+        </div>
+        <button class="logout">Logout</button>
+    </header>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Attendance</a></li>
+            <li><a href="#">Results</a></li>
+            <li><a href="#">Notices</a></li>
+            <li><a href="#">Fees</a></li>
+            <li><a href="#">Library</a></li>
+        </ul>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="content">
+        <section class="student-info">
+            <h2>Welcome, [Student Name]</h2>
+            <p>Enrollment No: 123456789</p>
+            <p>Branch: Computer Science & Engineering</p>
+        </section>
+
+        <section class="dashboard">
+            <div class="box">
+                <h3>Attendance</h3>
+                <p>80%</p>
+            </div>
+            <div class="box">
+                <h3>Upcoming Exams</h3>
+                <p>Maths - 10th Feb</p>
+            </div>
+            <div class="box">
+                <h3>Latest Notices</h3>
+                <p>Exam form submission deadline: 5th Feb</p>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

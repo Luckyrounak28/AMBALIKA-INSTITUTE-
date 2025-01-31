@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIMT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8e8e8;
+            color: #3d0000;
+        }
+
+        /* HEADER */
+        header {
+            background: #800000;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        /* NAVIGATION MENU */
+        .menu-toggle {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* FEATURE SECTION */
+        #features {
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .feature-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            max-width: 80%;
+            margin: auto;
+            box-sizing: border-box;
+        }
+
+        .feature {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .feature:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .feature img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .feature a {
+            text-decoration: none;
+            color: #3d0000;
+            display: block;
+            font-weight: bold;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #800000;
+            color: white;
+            margin-top: 20px;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            nav ul {
+                display: none;
+                flex-direction: column;
+                background: #800000;
+                position: absolute;
+                top: 55px;
+                left: 0;
+                width: 100%;
+                text-align: center;
+                padding: 10px 0;
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .feature-container {
+                grid-template-columns: repeat(2, 1fr);
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="icons/logo.png" alt="AIMT Logo">
+            <h1>AIMT</h1>
+        </div>
+        <div class="menu-toggle">&#9776;</div>
+        <nav>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="features">
+        <div class="feature-container">
+            <div class="feature"><a href="http://students.aimt.in:8088/aimtportal/"><img src="icons/erp.png" alt="ERP"><h3>ERP</h3></a></div>
+            <div class="feature"><a href="complaint.html"><img src="icons/complaint.png" alt="Complaint"><h3>Complaint</h3></a></div>
+            <div class="feature"><a href="hostel.html"><img src="icons/hostel.png" alt="Hostel"><h3>Hostel</h3></a></div>
+            <div class="feature"><a href="fees.html"><img src="icons/fees.png" alt="Fees"><h3>Fees</h3></a></div>
+            <div class="feature"><a href="tour.html"><img src="icons/tour.png" alt="College Tour"><h3>College Tour</h3></a></div>
+            <div class="feature"><a href="events.html"><img src="icons/event.png" alt="Events"><h3>Events</h3></a></div>
+            <div class="feature"><a href="sports.html"><img src="icons/sports.png" alt="Sports"><h3>Sports</h3></a></div>
+            <div class="feature"><a href="sos.html"><img src="icons/sos.png" alt="SOS"><h3>SOS Emergency</h3></a></div>
+            <div class="feature"><a href="communication.html"><img src="icons/communication.png" alt="Communication Skills"><h3>Communication Skills</h3></a></div>
+            <div class="feature"><a href="knowledge.html"><img src="icons/basic.png" alt="Basic Knowledge"><h3>Basic Knowledge</h3></a></div>
+            <div class="feature"><a href="vote.html"><img src="icons/vote.png" alt="Voting"><h3>Voting System</h3></a></div>
+            <div class="feature"><a href="tests.html"><img src="icons/test.png" alt="Tests"><h3>Weekly Tests</h3></a></div>
+            <div class="feature"><a href="faculty.html"><img src="icons/faculty.png" alt="Faculty"><h3>Faculty</h3></a></div>
+            <div class="feature"><a href="programming.html"><img src="icons/programming.png" alt="Programming"><h3>Programming Language</h3></a></div>
+            <div class="feature"><a href="feedback.html"><img src="icons/feedback.png" alt="Feedback"><h3>Feedback</h3></a></div>
+            <div class="feature"><a href="consultancy.html"><img src="icons/consultancy.png" alt="Consultancy"><h3>Consultancy</h3></a></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 AIMT. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelector(".menu-toggle").addEventListener("click", function() {
+            document.querySelector("nav ul").classList.toggle("active");
+        });
+    </script>
+
+</body>
+</html>
